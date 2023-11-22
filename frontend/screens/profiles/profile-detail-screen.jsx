@@ -1,14 +1,13 @@
-import { useRoute } from "@react-navigation/native";
+import { HeaderBackButton } from "@react-navigation/elements";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import { useLayoutEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { HeaderBackButton } from "@react-navigation/elements";
-import { useNavigation } from "@react-navigation/native";
 
 const ProfileDetailScreen = () => {
   const route = useRoute();
   const navigation = useNavigation();
 
-  const { eventId, title, description } = route.params;
+  const { profileId } = route.params;
 
   useLayoutEffect(() => {
     navigation.setOptions({
