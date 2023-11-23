@@ -8,11 +8,11 @@ const EventDetailScreen = () => {
   const route = useRoute();
   const navigation = useNavigation();
 
-  const { eventId, title, description } = route.params;
+  const { eventId, name, description } = route.params;
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerTitle: "new title",
+      headerTitle: name,
       headerLeft: () => (
         <HeaderBackButton
           tintColor="white"
@@ -25,8 +25,8 @@ const EventDetailScreen = () => {
   return (
     <View style={styles.screen}>
       <Text style={styles.size}>This is event detail screen for {eventId}</Text>
-      <Text style={styles.size}>{title}</Text>
-      <Text style={styles.size}>{description}</Text>
+      <Text style={styles.smallSize}>{name}</Text>
+      <Text style={styles.smallSize}>{description}</Text>
     </View>
   );
 };
@@ -37,6 +37,9 @@ const styles = StyleSheet.create({
   },
   size: {
     fontSize: 20,
+  },
+  smallSize: {
+    fontSize: 14,
   },
 });
 

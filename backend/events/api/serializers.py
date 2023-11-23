@@ -3,7 +3,10 @@ from rest_framework import serializers
 from ..models import Event
 
 
-class EventModelSerializer(serializers.ModelSerializer):
+class EventModelSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Event
-        fields = ("id", "name", "description", "qr_code", "date")
+        fields = ("id", "url", "name", "description", "qr_code", "date")
+
+    # depth = 1
+    # read_only_fields = ("date",)

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8686c109210830df779e1fbdc495ac4077b6eb27bf60bac9bdf868361e23ab15"
+            "sha256": "9232edad7502f7b9334633b019a6d4370a67cb30c540a2e822483029e047ec42"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -32,6 +32,14 @@
             "markers": "python_version >= '3.8'",
             "version": "==4.2.7"
         },
+        "django-cors-headers": {
+            "hashes": [
+                "sha256:0b1fd19297e37417fc9f835d39e45c8c642938ddba1acce0c1753d3edef04f36",
+                "sha256:0bf65ef45e606aff1994d35503e6b677c0b26cafff6506f8fd7187f3be840207"
+            ],
+            "index": "pypi",
+            "version": "==4.3.1"
+        },
         "djangorestframework": {
             "hashes": [
                 "sha256:579a333e6256b09489cbe0a067e66abe55c6595d8926be6b99423786334350c8",
@@ -39,6 +47,22 @@
             ],
             "index": "pypi",
             "version": "==3.14.0"
+        },
+        "ngrok": {
+            "hashes": [
+                "sha256:0abc756360fa21d97df440a3f33ba24bce6e5449007b631c87cab41c5838db70",
+                "sha256:20a4d9cd6e800010d28cbb61496e0fc0c8a4b13bc4d639ac53cf68b66262733b",
+                "sha256:20d3dc46e53cb663d09b6de26890ca0fcf9214b0a768a58e6c321e9b485ecf4e",
+                "sha256:4fc466c914fd6724461f4f55ce091ff3b4d4a9fea6ae17f3d7d1b9c10424f3ff",
+                "sha256:651f5dcb665061b7ce36780c3763cf0ae66bece573aa24fc9a9e92b7bd700bc6",
+                "sha256:87e8316832e52e61bfbad9bc95da832ab936d47a96376abf8dbcd689aef2186f",
+                "sha256:8c8a021466f371ccf0e0bf36f01c8d3e69037f52a9b23226d9d5e50ef5439756",
+                "sha256:9f166462b653618d200efbc97f0844addb8f0a0519a95dadba367865ec1c7c74",
+                "sha256:c4a992fc3b28d0f1f80b84da60e367b817fd722b34860404d33526b0474242df",
+                "sha256:ed2a097e8285b5b24a53368dac4baa6548783af5f2e7075f62656fade2984ffd"
+            ],
+            "index": "pypi",
+            "version": "==0.12.0"
         },
         "pillow": {
             "hashes": [

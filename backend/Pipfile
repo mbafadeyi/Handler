@@ -7,6 +7,8 @@ name = "pypi"
 djangorestframework = "*"
 pillow = "*"
 qrcode = "*"
+ngrok = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 

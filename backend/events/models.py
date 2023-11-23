@@ -10,7 +10,7 @@ class Event(models.Model):
     name = models.CharField(max_length=200)
     description = models.TextField()
     qr_code = models.ImageField(blank=True, upload_to="qrcodes/")
-    date = models.DateField()
+    date = models.DateField(auto_now_add=True)
 
     def __str__(self):
         return str(self.name)
